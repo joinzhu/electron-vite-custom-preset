@@ -1,0 +1,16 @@
+body{
+  background-color: blue;
+}
+
+
+$default-color: #666666;
+$default-orange: #FC6002;
+$default-black-2a2: #2A2B34;
+$default-black-282: #282A33;
+$default-black-333: #333333;
+
+:root{
+  --el-menu-bg-color: #2A2B34;
+  --el-menu-text-color: #fff;
+  --el-menu-active-color: #FC6002;
+}

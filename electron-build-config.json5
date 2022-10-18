@@ -1,0 +1,30 @@
+/**
+ * electron-builder 打包配置文件
+ */
+
+{
+  appId: 'com.my-website.my-app',
+  productName: 'INFINITY',
+  copyright: 'Copyright',
+  mac: {
+    category: 'public.app-category.utilities',
+  },
+  win: {
+    icon: 'public/icon.jpeg',
+    target: [
+      {
+        target: 'nsis',
+        arch: ['x64'],
+      },
+    ],
+  },
+  nsis: {
+    oneClick: false,
+    allowToChangeInstallationDirectory: true,
+  },
+  files: ['dist/**/*', 'electron/**/*'],
+  directories: {
+    buildResources: 'assets',
+    output: 'dist_electron',
+  },
+}
